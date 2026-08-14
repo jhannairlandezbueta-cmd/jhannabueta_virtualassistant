@@ -559,13 +559,13 @@
             background: var(--light-pink);
         }
 
-        .why-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 22px;
-            max-width: 950px;
-            margin: auto;
-        }
+        .why-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    max-width:1200px;
+    margin:auto;
+}
 
         .why-card {
             background: white;
@@ -645,12 +645,12 @@
             background: var(--cream);
         }
 
-        .contact-grid {
-            display: grid;
-            grid-template-columns: .8fr 1.2fr;
-            gap: 50px;
-            align-items: start;
-        }
+        .contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:start;
+}
 
         .contact-text h3 {
             font-family: "Playfair Display", serif;
@@ -722,6 +722,119 @@
             color: var(--muted);
             margin-bottom: 25px;
         }
+
+               /* =================================
+   VIDEO PORTFOLIO
+================================= */
+
+.portfolio-item.video {
+
+    background: rgba(255,255,255,.55);
+
+    backdrop-filter: blur(25px);
+
+    border: 1px solid rgba(255,255,255,.7);
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.07);
+
+    transition: .4s ease;
+
+}
+
+
+.portfolio-item.video:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.12);
+
+}
+
+
+/* Project title */
+
+.portfolio-title {
+
+    display: block;
+
+    color: #333;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    margin-bottom: 8px;
+
+    transition: .3s ease;
+
+}
+
+
+.portfolio-title:hover {
+
+    color: #d99ab4;
+
+    transform: translateX(5px);
+
+}
+
+
+/* Watch instruction */
+
+.watch-label {
+
+    display: block;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    color: #d99ab4;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* Description */
+
+.portfolio-info p {
+
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin: 0;
+
+}
+
+
+/* Dark mode */
+
+.dark .portfolio-item.video {
+
+    background: rgba(30,30,30,.65);
+
+}
+
+
+.dark .portfolio-title {
+
+    color: white;
+
+}
 
 
         /* ==============================
@@ -1481,7 +1594,7 @@
 
     <div class="portfolio-info">
 
-        <a href="Yhttps://drive.google.com/file/d/17L47QrTOCVsDioMhAabmqt5QTii6vV_d/view?usp=sharing"
+        <a href="https://drive.google.com/file/d/17L47QrTOCVsDioMhAabmqt5QTii6vV_d/view?usp=sharing"
            target="_blank"
            class="portfolio-title">
 
@@ -1522,6 +1635,10 @@
 
 
 
+            </div> <!-- portfolio-grid -->
+        </div> <!-- container -->
+    </section> <!-- portfolio -->
+                
     <!-- ==============================
          WHY WORK WITH ME
     ============================== -->
@@ -1735,7 +1852,7 @@
 
                         <!-- EMAIL -->
 
-                        <a href="mailto:YOUR-jhannabueta03gmail.com"
+                        <a href="mailto:jhannabueta03gmail.com"
                            class="contact-item">
 
                             <div class="contact-icon">
@@ -2037,119 +2154,7 @@
 
         }
 
-        /* =================================
-   VIDEO PORTFOLIO
-================================= */
-
-.portfolio-item.video {
-
-    background: rgba(255,255,255,.55);
-
-    backdrop-filter: blur(25px);
-
-    border: 1px solid rgba(255,255,255,.7);
-
-    border-radius: 25px;
-
-    padding: 30px;
-
-    box-shadow:
-        0 15px 40px rgba(0,0,0,.07);
-
-    transition: .4s ease;
-
-}
-
-
-.portfolio-item.video:hover {
-
-    transform: translateY(-8px);
-
-    box-shadow:
-        0 25px 60px rgba(0,0,0,.12);
-
-}
-
-
-/* Project title */
-
-.portfolio-title {
-
-    display: block;
-
-    color: #333;
-
-    font-size: 22px;
-
-    font-weight: 700;
-
-    text-decoration: none;
-
-    margin-bottom: 8px;
-
-    transition: .3s ease;
-
-}
-
-
-.portfolio-title:hover {
-
-    color: #d99ab4;
-
-    transform: translateX(5px);
-
-}
-
-
-/* Watch instruction */
-
-.watch-label {
-
-    display: block;
-
-    font-size: 12px;
-
-    text-transform: uppercase;
-
-    letter-spacing: 1.5px;
-
-    color: #d99ab4;
-
-    margin-bottom: 18px;
-
-}
-
-
-/* Description */
-
-.portfolio-info p {
-
-    color: #777;
-
-    font-size: 14px;
-
-    line-height: 1.8;
-
-    margin: 0;
-
-}
-
-
-/* Dark mode */
-
-.dark .portfolio-item.video {
-
-    background: rgba(30,30,30,.65);
-
-}
-
-
-.dark .portfolio-title {
-
-    color: white;
-
-}
-
+ 
 
 .dark .portfolio-info p {
 
